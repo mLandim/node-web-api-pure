@@ -1,0 +1,17 @@
+N-Layers
+
+databases
+    - file witch store all data (simplified version)
+src -all source code
+    - entities : objet mapping
+    - factories : instance generators
+    - repositories : data access
+    - routes : endpoint mappings
+    - services : communication between the routes and repositories layers (business logic)
+    - util : shared code
+    - handler : communication routes and server
+    
+test -> all automated test suite
+    - integration tests : testing on user point of view. It's also an E2E test because there's no app consuming It
+    - unit tests : all tests the must run without any external connections such as databases, external API and fileSystem...
+
